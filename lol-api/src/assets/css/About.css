@@ -1,0 +1,27 @@
+.about-box {
+    margin-top: 10%;
+    text-align: start;
+    opacity: 0;
+    color: rgb(81, 81, 245);
+    transition: all 1s linear;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: box-anim 1s forwards 0s;
+    text-align: justify;
+    background-color: rgb(37, 37, 37);
+}
+
+.about-text {
+    opacity: 1;
+}
+
+@keyframes box-anim {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 100px;
+        opacity: 1;
+    }
+}

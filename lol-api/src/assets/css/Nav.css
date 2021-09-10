@@ -8,7 +8,7 @@
 }
 
 .title-text {
-    transition: all 3s;
+    transition: all 1s;
 }
 
 @keyframes title-anim {
@@ -16,6 +16,20 @@
         top: 0;
     }
     to {
-        top: 10%;
+        top: 20px;
     }
 }
+
+@media (min-width: 576px) {
+    .title-box {
+        top: 0;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

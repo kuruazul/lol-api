@@ -1,0 +1,5 @@
+{
+    "about": {
+        "description": "Esta es la api de league of legends; un popular videojuego estilo moba multijugador. El uso de la api es variado desde automatizar torneos, consulta de perfiles, consulta de personajes del juego, etc."
+    }
+}
