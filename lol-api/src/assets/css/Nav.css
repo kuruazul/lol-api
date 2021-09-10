@@ -1,0 +1,21 @@
+.title-box {
+    top: 0;
+    letter-spacing: 5px;
+    transition: all 3s;
+    color: rgb(201, 197, 0);
+    font-weight: 900;
+    animation: title-anim 1s forwards 0s;
+}
+
+.title-text {
+    transition: all 3s;
+}
+
+@keyframes title-anim {
+    from {
+        top: 0;
+    }
+    to {
+        top: 10%;
+    }
+}
