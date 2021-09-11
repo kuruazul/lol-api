@@ -1,5 +1,16 @@
 {
     "about": {
-        "description": "Esta es la api de league of legends; un popular videojuego estilo moba multijugador. El uso de la api es variado desde automatizar torneos, consulta de perfiles, consulta de personajes del juego, etc."
+        "description": "Esta es la api de league of legends; un popular videojuego estilo moba multijugador. El uso de la api es variado desde automatizar torneos, consulta de perfiles, consulta de personajes del juego, etc.",
+        "subtitle": "Como por ejemplo:",
+        "fetch": {
+            "success": {
+                "langs": "Idiomas disponibles",
+                "spell": "Hechizos de invocador"
+            },
+            "error": {
+                "langs": "Cargando idiomas",
+                "spell": "Cargando Hechizos de invocador"
+            }
+        }
     }
 }

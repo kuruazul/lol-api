@@ -8,12 +8,7 @@ import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
 import lang_es from './lang/Es/Es.json'
 import lang_en from './lang/En/En.json'
-//  adding json lang tranalation
-const resources = {
-    en: lang_en,
-    es: lang_es,
 
-};
 //  init multi lenguaje library
 i18next.init({
   interpolation:{ escapeValue: false},

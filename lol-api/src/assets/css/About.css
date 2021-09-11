@@ -1,18 +1,47 @@
 .about-box {
-    margin-top: 10%;
+    margin-top: 70px;
     text-align: start;
     opacity: 0;
-    color: rgb(81, 81, 245);
     transition: all 1s linear;
-    font-weight: 600;
-    letter-spacing: 2px;
     animation: box-anim 1s forwards 0s;
     text-align: justify;
     background-color: rgb(37, 37, 37);
 }
 
 .about-text {
+    color: rgb(81, 81, 245);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about-fetch-header {
+    background-color: rgb(37, 37, 37);
+}
+
+.about-spell {
+    width: 7rem;
+    height: 7rem;
+}
+
+.about-spell-box-image {
+    margin: auto;
+    transition: all 1s;
+}
+
+.about-spell-name {
+    transition: all 1s;
+    color: rgb(0, 253, 198);
+    letter-spacing: 0px;
+    font-weight: 600;
+    -webkit-text-stroke: 1px black;
+}
+
+.spell .about-spell .about-spell-name:hover {
     opacity: 1;
+}
+
+.spell .about-spell .about-spell-box-image:hover {
+    opacity: 0.5;
 }
 
 @keyframes box-anim {

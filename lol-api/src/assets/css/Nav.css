@@ -11,6 +11,26 @@
     transition: all 1s;
 }
 
+.btn-lang {
+    color: blue !important;
+    background-color: transparent;
+    padding: 5px 10px;
+    position: absolute;
+    letter-spacing: 2px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+}
+
+.btn-lang-box {
+    transition: all 1s;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.btn-lang-box:hover {
+    margin-right: 25px !important;
+}
+
 @keyframes title-anim {
     from {
         top: 0;
@@ -19,17 +39,3 @@
         top: 20px;
     }
 }
-
-@media (min-width: 576px) {
-    .title-box {
-        top: 0;
-    }
-}
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}

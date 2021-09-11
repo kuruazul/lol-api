@@ -5,4 +5,24 @@
 
 body {
     background-image: url('./images/body-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+@media (min-width: 576px) {
+    .title-box {
+        top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-lang-box {
+        margin-top: 10% !important;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
