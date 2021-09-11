@@ -8,7 +8,7 @@ const Spells = () => {
 
     //  fetching spells data from league of legends api
     const fetchSpells=async() =>{
-        const url = "http://ddragon.leagueoflegends.com/cdn/11.18.1/data/es_MX/summoner.json"
+        const url = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/es_MX/summoner.json"
         let raw_data = await fetch(url)
         let data = await raw_data.json()
         let arrayed_data = Object.entries(data.data)
