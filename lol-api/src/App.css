@@ -13,24 +13,21 @@
         width: 100%;
     }
     
-    @media (min-width: 576px) {
+    @media (max-width: 576px) {
         .title-box {
             top: 0;
             width: 80% !important;
         }
-        .title-text {
-            font-size: 10px;
-        }
     }
     
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         .btn-lang-box {
             margin-top: 10% !important;
         }
     }
     
-    @media (min-width: 992px) {}
+    @media (max-width: 992px) {}
     
-    @media (min-width: 1200px) {}
+    @media (max-width: 1200px) {}
     
-    @media (min-width: 1400px) {}
+    @media (max-width: 1400px) {}
