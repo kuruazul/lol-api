@@ -1,18 +1,29 @@
 import { useEffect,useState } from "react"
 import { useTranslation } from "react-i18next";
 
-
+import i18next from "i18next";
 const Spells = () => {
     const [t] = useTranslation("global");
+    const [SpellMX,setSpellMX] = useState(null)
+    const [SpellUS,setSpellUS] = useState(null)
     const [Spell,setSpell] = useState(null)
-
     //  fetching spells data from league of legends api
     const fetchSpells=async() =>{
-        const url = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/es_MX/summoner.json"
-        let raw_data = await fetch(url)
-        let data = await raw_data.json()
-        let arrayed_data = Object.entries(data.data)
-        setSpell(arrayed_data) 
+        let urlUs = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/en_US/summoner.json"
+        let urlMx = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/es_MX/summoner.json"
+        let raw_data_mx = await fetch(urlMx)
+        let data_mx = await raw_data_mx.json()
+        let arrayed_data_mx = Object.entries(data_mx.data)
+        setSpellMX(arrayed_data_mx) 
+        let raw_data_us = await fetch(urlUs)
+        let data_us = await raw_data_us.json()
+        let arrayed_data_us = Object.entries(data_us.data)
+        setSpellUS(arrayed_data_us) 
+        if (i18next.language === "es"){
+            setSpell(SpellMX)
+        }else{
+            setSpell(SpellMX)
+        }
         
     }
 
@@ -34,11 +45,11 @@ const Spells = () => {
         </div>
 
         //  spells array variable where will be storage all item
-        let spells = []
-        
+        let spellsRender = []
+        let Spell = i18next.language === "es" ? SpellMX : SpellUS;
         Spell.map((summ,i)=>(
             // pushing spell html templates
-            spells.push(
+            spellsRender.push(
             <div key={"summoner-"+i.toString()} className="col-4 spell py-2">
                 <div className="about-spell position-relative text-center">
                     
@@ -54,7 +65,7 @@ const Spells = () => {
         ))
 
         //  push into whole_spell variable all the style
-        whole_spell.push(title,spells)
+        whole_spell.push(title,spellsRender)
         return whole_spell
     }
 
