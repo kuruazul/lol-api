@@ -1,3 +1,16 @@
 {
-    "about": "This is the league of legends api which is a multiplayer videogame some data such as: champions, abilities, languajes, etc. We can use this data in order to turn it a galery for example: "
+    "about": {
+        "description": "This is the api of league of legends; a popular multiplayer moba style video game. The use of the api is varied from automating tournaments, profile query, game character query, etc.",
+        "subtitle": "For example:",
+        "fetch": {
+            "success": {
+                "langs": "Available languages",
+                "spell": "Summoner spells"
+            },
+            "error": {
+                "langs": "Loading languages",
+                "spell": "Loading Summoner Spells"
+            }
+        }
+    }
 }
