@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
 import lang_es from './lang/Es/Es.json'

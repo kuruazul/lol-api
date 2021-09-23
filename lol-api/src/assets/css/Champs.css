@@ -1,0 +1,30 @@
+.champs-box{
+    margin-top: 70px;
+}
+.champ-img{
+     width: 10rem;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.champ-img:hover{
+    box-shadow: 0px 0px 20px rgb(0, 90, 163);
+}
+.text-default{
+    color:rgb(0, 130, 236) !important;
+}
+.text-default::placeholder{
+    color:rgb(0, 130, 236) !important;
+}
+.champ-text-name{
+    transition: all 0.5s;
+}
+.champ-text-name:hover{
+    transform: scale(1.5);
+}
+.filter-body{
+    transition: all 0.5s;
+    opacity: 1;
+    background-color: rgb(68, 68, 68,0.3) !important;
+    background-size: 100% 100%;
+    filter: blur(4px);
+}

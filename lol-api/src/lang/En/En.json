@@ -11,6 +11,7 @@
                 "langs": "Loading languages",
                 "spell": "Loading Summoner Spells"
             }
-        }
+        },
+        "champsBtn":"Meet Champions"
     }
 }
