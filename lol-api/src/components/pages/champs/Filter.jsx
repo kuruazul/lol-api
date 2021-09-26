@@ -2,16 +2,16 @@ import React from 'react'
 import { useState } from 'react/cjs/react.development'
 console.log(new Date())
  const Filter = (props) => {
-     const {setDataSearch,ChampsTypes} = props
+     const {setDataSearch,ChampsTypes} = (props)
+     console.log(ChampsTypes)
      const searchChamp =(e)=>{
          setDataSearch(e.target.value)
      }
-     const updateChampsTypes=(types)=>{
-        //setDataChampsTypes(types)
-     }
+
      const renderChampsTypes=()=>{
-         if (ChampsTypes.length ==0) 
+         if (ChampsTypes===null) 
          return <div className="my-3 text-default">No data</div>
+
         let allChampsTypes =[]
          ChampsTypes.map((type)=>{
              allChampsTypes.push(

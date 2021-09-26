@@ -1,23 +1,24 @@
 import '../../../assets/css/Champs.css'
 import Filter from './Filter'
-import { useEffect, useState } from 'react'
-
+import { useState } from 'react'
 import ChampsView from './ChampsView'
+
 const Index = () => {
     const [Champs,setChamps] = useState(null)
-    const [ChampsTypes,setChampsTypes] = useState([])
+    const ChampsTypes = (["a","b"])
     const [Results,setResults] = useState(0)
     const [Search,setSearch] = useState("")
+
     const setDataChamps=(champs)=>{
         setChamps(champs)
     }
-    const setDataChampsTypes=(champsTypes)=>{
-        setChampsTypes(...ChampsTypes,champsTypes)
-    }
+
+  
 
     const setDataSearch =(search)=>{
         setSearch(search)
     }
+
     const setDataResults=(result)=>{
         setResults(result)
     }
@@ -33,7 +34,7 @@ const Index = () => {
                 </div>
                     <ChampsView Search={Search}
                                 ChampsTypes={ChampsTypes}
-                                setDataChampsTypes={setDataChampsTypes} 
+                                
                                 Champs={Champs} 
                                 setDataChamps={setDataChamps} 
                                 Results={Results} 
