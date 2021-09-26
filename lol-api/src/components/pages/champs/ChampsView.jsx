@@ -1,37 +1,37 @@
-import { useEffect, useState } from "react"
+
 import ChampItem from './ChampItem'
 import axios from 'axios'
+import { useList } from "../../../Contexts/List"
 const ChampsView = (props) => {
-    const { setDataChamps, 
-            Champs, 
+    const {List,Loading} =useList()
+    const { 
             Search,
             setDataResults,
             Results,
             ChampsTypes,
             setDataChampsTypes} = props
     
-    const [Loading,setLoading]=useState(false)
-    const fetchChamps =async()=>{
-        setLoading(true)
-        let rawData =await axios.get("https://ddragon.leagueoflegends.com/cdn/11.19.1/data/en_US/champion.json")
-                                .then(res => res.data)
-        let data =Object.values( rawData.data)        
-        setDataChamps(data)
-        setLoading(false)
+    
+    const checkTypes=(champ)=>{
+        let check = false
+        champ.tags.map((tag)=> {
+            if (tag.toLowerCase().includes(Search.toLowerCase()))
+            check = true
+        })
+        return check
     }
-
-    useEffect(()=>{
-        fetchChamps()
-    },[])
-
     const renderChamps=()=>{
-        if (Champs === null) 
+        if (List === null) 
         return ""
+
+    
+        
         
         let champsArray=[]
-        Champs.map((champ) =>{
+        List.map((champ) =>{
             
-            if (champ.name.toLowerCase().includes(Search.toLowerCase())){
+            
+            if (champ.name.toLowerCase().includes(Search.toLowerCase()) || checkTypes(champ) ){
                 champsArray.push(
                     <ChampItem ChampsTypes={ChampsTypes} setDataChampsTypes={setDataChampsTypes}  champ={champ}/>
                 )

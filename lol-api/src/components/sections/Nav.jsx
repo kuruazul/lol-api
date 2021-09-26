@@ -20,7 +20,7 @@ const Nav = () => {
     }
     return(
     <div className="text-center position-absolute w-100 title-box">
-        <div className="position-absolute justify-content-end w-100 row">
+        <div className=" justify-content-end w-100 row">
             <div className="btn-lang-box position-fixed  w-auto">
                 <button className="btn-lang w-auto border border-1 border-warning text-uppercase position-fixed" onClick={changeLang}>{lang}</button>
             </div>

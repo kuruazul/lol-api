@@ -3,15 +3,13 @@ import Filter from './Filter'
 import { useState } from 'react'
 import ChampsView from './ChampsView'
 
+
 const Index = () => {
-    const [Champs,setChamps] = useState(null)
+    
     const ChampsTypes = (["a","b"])
     const [Results,setResults] = useState(0)
     const [Search,setSearch] = useState("")
 
-    const setDataChamps=(champs)=>{
-        setChamps(champs)
-    }
 
   
 
@@ -32,14 +30,13 @@ const Index = () => {
                             ChampsTypes={ChampsTypes} 
                     />
                 </div>
+                
                     <ChampsView Search={Search}
                                 ChampsTypes={ChampsTypes}
-                                
-                                Champs={Champs} 
-                                setDataChamps={setDataChamps} 
                                 Results={Results} 
                                 setDataResults={setDataResults}
                     />
+                
             </div>
         </div>
     )
