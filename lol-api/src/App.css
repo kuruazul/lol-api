@@ -8,23 +8,7 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    
-    .text-title-box {
-        width: 100%;
-    }
-    
-    @media (max-width: 576px) {
-        .title-box {
-            top: 0;
-            width: 80% !important;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .btn-lang-box {
-            margin-top: 10% !important;
-        }
-    }
+
     
     @media (max-width: 992px) {}
     

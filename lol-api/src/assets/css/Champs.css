@@ -3,6 +3,7 @@
 }
 .champ-img{
      width: 10rem;
+     height: 10rem;
     object-fit: cover;
     transition: all 0.5s;
 }

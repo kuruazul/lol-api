@@ -13,5 +13,12 @@
             }
         },
         "champsBtn":"Meet Champions"
+    },
+    "champs":{
+        "results":"Results found",
+        "filter":{
+            "title":"Filter",
+            "placeholder":"Search champions by name or tags"
+        }
     }
 }

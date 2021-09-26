@@ -13,5 +13,12 @@
             }
         },
         "champsBtn":"Conocer campeones"
+    },
+    "champs":{
+        "results":"Resultados encontrados",
+        "filter":{
+            "title":"Filtrar",
+            "placeholder":"Buscar campeones por nombre o etiqueta"
+        }
     }
 }
