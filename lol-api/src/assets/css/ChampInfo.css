@@ -2,3 +2,19 @@
     margin-top: 80px;
     
 }
+.champ-skins{
+    transition: all 0.5s;
+    box-shadow: 0px 0px 10px rgb(0, 90, 163);
+    
+}
+.champ-skins:hover{
+    box-shadow: 0 0 20px purple;
+    border-radius: 0px;
+}
+.arrows{
+    transition: all 0.2s;
+    
+}
+.arrows:hover{
+    scale: 1.2;
+}

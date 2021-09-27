@@ -13,23 +13,23 @@ const GeneralData = (props) => {
         
         Champ.tags.map((tag)=>{
             champTags.push(
-                <span key={"tags-"+Champ.name+"-"+tag} className={"badge mx-1 my-auto bg-"+checkChampTags(tag)}>{translateTags(tag,true)}</span>
+                <span key={"tags-"+Champ.name+"-"+tag} className={"badge mx-1 bg-"+checkChampTags(tag)}>{translateTags(tag,true)}</span>
             )
         })
         return champTags
     }
-
+    
     return (
         <div className="text-default">
-            <div className="row container-fluid">
-                <div className="w-auto text-center">
-                    <span className="text-uppercase fs-3">{Champ.name}</span>
-                    <div className="">
+            <div className="row container-fluid p-0 m-0">
+                <div className="col-md-4 mx-auto text-center my-auto my-3 my-md-0">
+                    <span className="text-uppercase fs-2">{ Champ && Champ.name}</span>
+                    <div className="h-100 my-auto w-auto">
                     {addChampTags()}
                     </div>
                 </div>
-                <div className="w-auto my-auto fs-2">
-                    <span className="my-auto">{Champ.title}</span>
+                <div className="col-md-8 text-center my-auto fs-3">
+                    <span className="my-auto text-uppercase">{Champ && Champ.title}</span>
                 </div>
             </div>
         </div>
